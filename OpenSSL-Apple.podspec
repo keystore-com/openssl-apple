@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
     s.prepare_command = <<-CMD
 ./build-libssl.sh --version=#{openssl_version}
-./create-openssl-framework.sh dynamic
+./create-openssl-framework.sh static
     CMD
 
     s.ios.deployment_target     = "10.0"
